@@ -2,10 +2,12 @@
     "server": {
         "port": "8089"
     },
+
     "router": {
-        "default": "/index.html",
+        "default": "home",
         "error": "/error.html",
-        "root": "./wwwroot",
-        "views": "./views"
+        "controllers": "./controllers",
+        "views": "./views",
+        "root": "./wwwroot"
     }
 }
