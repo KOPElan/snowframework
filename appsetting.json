@@ -1,0 +1,11 @@
+{
+    "server": {
+        "port": "8089"
+    },
+    "router": {
+        "default": "/index.html",
+        "error": "/error.html",
+        "root": "./wwwroot",
+        "views": "./views"
+    }
+}
