@@ -1,12 +1,9 @@
+var response = require('../lib/response');
+
 var productController = {
-    indexAction: function (req, res) {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end("hellow product");
-    },
-
-    testAction: function (req, res) {
-
+    indexAction: function (req, res) {        
+        response.content("hellow product! \r\n" , response.contentType.txt, res);
     }
-}
+};
 
 module.exports = productController;

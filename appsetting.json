@@ -1,4 +1,7 @@
 {
+    "app":{
+        "environment":"development"
+    },
     "server": {
         "port": "8089"
     },

@@ -5,15 +5,16 @@ var appsetting = require('./appsetting.json');
 //引入controllers
 var homeController = require('./controllers/homeController');
 var productController = require('./controllers/productController');
-//配置站点页面
-router.use("home",homeController);
-router.use("product",productController);
+//配置controller
+router.use("home", homeController);
+router.use("product", productController);
 
-http.createServer(function (reqest, respose) {
-    var result = router.action(reqest, respose);
-    //homeController.
-    //res.writeHead(result.statusCode, { 'Content-Type': result.contentType });
-    //res.end(result.document);
+//创建服务器监听
+http.createServer((reqest, respose) => {
+    //过滤器对请求进行筛选
+    //filters.auth(request);
+    //处理请求
+    router.actionHandler(reqest, respose);
 }).listen(appsetting.server.port);
 
 
