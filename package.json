@@ -1,11 +1,11 @@
 {
-  "name": "nodewebfrm",
+  "name": "snowf",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple node wed framework",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Elan",
+  "license": "MIT"
 }
