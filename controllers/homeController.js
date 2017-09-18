@@ -1,8 +1,7 @@
-const appsetting = require('../appsetting');
 const response = require('../lib/response');
 const db = require('../lib/db');
 
-var homeController = {
+const homeController = {
     indexAction: function (req, res) {
         //返回普通页面
         response.view('/home/index.html', res);
@@ -18,7 +17,11 @@ var homeController = {
 
             response.content(JSON.stringify(result.recordset[0]), response.contentType.json, res);
         });
+        response.view('/home/index.html', res);
+    },
+    aboutAction: function (req, res) {
+        response.view('/home/about.html', res);
     }
-}
+};
 
 module.exports = homeController;
