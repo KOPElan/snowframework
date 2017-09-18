@@ -1,16 +1,27 @@
 {
-    "app":{
-        "environment":"development"
+    "app": {
+        "environment": "development"
     },
     "server": {
         "port": "8089"
     },
-
     "router": {
         "default": "home",
         "error": "/error.html",
         "controllers": "./controllers",
         "views": "./views",
         "root": "./wwwroot"
+    },
+    "mssql": {
+        "user": "sa",
+        "password": "Haifeng.1706",
+        "server": "10.1.12.55",
+        "database": "Haifeng.CMS",
+        "parseJSON": true,
+        "pool": {
+            "max": 10,
+            "min": 0,
+            "idleTimeoutMillis": 30000
+        }
     }
 }

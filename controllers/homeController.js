@@ -1,8 +1,23 @@
-var response=require('../lib/response');
+const appsetting = require('../appsetting');
+const response = require('../lib/response');
+const db = require('../lib/db');
 
 var homeController = {
     indexAction: function (req, res) {
-        response.view('/home/index.html',res);
+        //返回普通页面
+        response.view('/home/index.html', res);
+    },
+    //数据库链接实例
+    //mssql源代码及文档：https://github.com/patriksimek/node-mssql
+    dataAction: function (req, res) {
+        //参数
+        var id = 2;
+        db.query(`select * from Category where id=${id}`, (result, err) => {
+            if (err != null)
+                return response.error(err, res);
+
+            response.content(JSON.stringify(result.recordset[0]), response.contentType.json, res);
+        });
     }
 }
 
