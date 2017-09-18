@@ -1,0 +1,10 @@
+body{    
+    background-image: url(/img/bk.svg);        
+}
+.index{
+    min-height: 100vh;
+    position: relative;    
+}
+.docs{
+    padding-top: 80px;
+}
