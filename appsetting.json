@@ -2,14 +2,19 @@
     "app": {
         "environment": "development"
     },
+    
     "server": {
         "port": "8089"
     },
 
     "router": {
         "default": "home",
+<<<<<<< HEAD
         "error": "/error.html",
         "layout": "./wwwroot/layout",
+=======
+        "error": "/shared/error.html",
+>>>>>>> 476c5fa424b7ec6e4f375b1618330f0ab420009c
         "controllers": "./controllers",
         "views": "./views",
         "root": "./wwwroot"
