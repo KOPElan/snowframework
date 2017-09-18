@@ -1,6 +1,6 @@
 {
-    "app":{
-        "environment":"development"
+    "app": {
+        "environment": "development"
     },
     "server": {
         "port": "8089"
@@ -9,6 +9,7 @@
     "router": {
         "default": "home",
         "error": "/error.html",
+        "layout": "./wwwroot/layout",
         "controllers": "./controllers",
         "views": "./views",
         "root": "./wwwroot"

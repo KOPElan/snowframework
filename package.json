@@ -1,11 +1,15 @@
 {
   "name": "snowf",
   "version": "1.0.0",
-  "description": "simple node wed framework",
+  "description": "simple node web framework",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.4.4",
+    "vue-server-renderer": "^2.4.4"
+  }
 }
