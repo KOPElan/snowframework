@@ -1,9 +1,9 @@
 body{    
-    background-image: url(/img/bk.svg);        
+    background-image: url(/img/bk.svg); 
+    background-size: cover;       
 }
 .index{
-    min-height: 100vh;
-    position: relative;    
+    height: 100%;     
 }
 .docs{
     padding-top: 80px;
