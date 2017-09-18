@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mssql": "^4.0.4"
+  }
 }
