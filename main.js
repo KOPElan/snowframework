@@ -1,20 +1,10 @@
-const http = require('http');
-const router = require('./lib/router');
 const appsetting = require('./appsetting.json');
+const snowf = require('./lib/snowframework');
 
-//引入controllers
-const homeController = require('./controllers/homeController');
-const docsController = require('./controllers/docsController');
-//配置controller
-router.use("home", homeController);
-router.use("docs", docsController);
+var app = snowf();
 
-//创建服务器监听
-http.createServer((reqest, respose) => {
-    //过滤器对请求进行筛选
-    //filters.auth(request);
-    //处理请求
-    router.actionHandler(reqest, respose);
-}).listen(appsetting.server.port);
+app.addController('home', require('./controllers/homeController'));
+
+app.start(8080);
 
 
