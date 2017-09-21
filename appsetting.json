@@ -1,9 +1,9 @@
 {
     "snowf": {
-        "environment": "development",
+        "environment": "",
         "port": "8089",
         "router": {
-            "default": "docs",
+            "default": "home",
             "error": "/shared/error.html",
             "views": "./views",
             "root": "./wwwroot"

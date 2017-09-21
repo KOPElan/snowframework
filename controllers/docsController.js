@@ -1,11 +1,13 @@
-const response = require('../lib/context');
+const action = require('../lib/action');
 
 const docsController = {
-    indexAction: function (req, res) {
-        response.view('/docs/index.html', res);
+    indexAction: function (req) {
+        //response.view('/docs/index.html', res);   
+        return action.view();
     },
-    startAction: function (req, res) {
-        response.content('hello world',response.contentType.txt,res);
+    startAction: function (req) {
+        return action.file('D:/OneDrive/图片/屏幕快照/2017-05-17 (1).png');
+        //response.content('hello world',response.contentType.txt,res);
     }
 };
 
