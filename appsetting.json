@@ -3,7 +3,7 @@
         "environment": "development",
         "port": "8089",
         "router": {
-            "default": "home",
+            "default": "docs",
             "error": "/shared/error.html",
             "views": "./views",
             "root": "./wwwroot"
