@@ -1,5 +1,5 @@
 const appsetting = require('./appsetting');
-const snowf = require('./lib/snowframework');
+const snowf = require('./lib/snowf');
 
 //使用配置文件初始化应用
 var app = snowf(appsetting.snowf);
