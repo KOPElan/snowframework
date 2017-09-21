@@ -1,4 +1,4 @@
-const response = require('../lib/response');
+const response = require('../lib/context');
 
 const homeController = {
     indexAction: function (req, res) {

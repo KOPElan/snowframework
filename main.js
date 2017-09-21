@@ -1,10 +1,10 @@
-const appsetting = require('./appsetting.json');
+const appsetting = require('./appsetting');
 const snowf = require('./lib/snowframework');
 
-var app = snowf();
-
+//使用配置文件初始化应用
+var app = snowf(appsetting.snowf);
+//添加controller
 app.addController('home', require('./controllers/homeController'));
-
-app.start(8080);
-
-
+app.addController('docs', require('./controllers/docsController'));
+//开始监听
+app.start();
