@@ -30,14 +30,25 @@ this file need snowf node
 ```json
 {
     "snowf": {
-        "environment": "development",  //set the environment, if 'development', you will recive the debug info, else it will show the custom error page
+        "environment": "development", 
         "port": "8089",
         "router": {
-            "default": "home", //default page
-            "error": "/shared/error.html", //custom error page
-            "views": "./views", //views dir
-            "root": "./wwwroot" //static resouce dir
+            "default": "home", 
+            "error": "/shared/error.html", 
+            "views": "./views", 
+            "root": "./wwwroot" 
         }
     }
 }
 ```
+environment : set the environment, if 'development', you will recive the debug info, else it will show the custom error page
+
+port : the server port
+
+default : default page
+
+error : custom error page
+
+views : views dir
+
+root : static resouce dir
