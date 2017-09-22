@@ -13,8 +13,8 @@ a simple nodeJS web framework
 
 ``` js
 //require snowframework
-const appsetting = require('./appsetting');
 const snowf = require('snowframework');
+const appsetting = require('./appsetting');
 
 //init with appsetting.json
 var app = snowf(appsetting.snowf);
@@ -30,13 +30,13 @@ this file need snowf node
 ```json
 {
     "snowf": {
-        "environment": "development",
+        "environment": "development",  //set the environment, if 'development', you will recive the debug info, else it will show the custom error page
         "port": "8089",
         "router": {
-            "default": "home",
-            "error": "/shared/error.html",
-            "views": "./views",
-            "root": "./wwwroot"
+            "default": "home", //default page
+            "error": "/shared/error.html", //custom error page
+            "views": "./views", //views dir
+            "root": "./wwwroot" //static resouce dir
         }
     }
 }
