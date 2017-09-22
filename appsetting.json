@@ -1,6 +1,6 @@
 {
     "snowf": {
-        "environment": "",
+        "environment": "development",
         "port": "8089",
         "router": {
             "default": "home",

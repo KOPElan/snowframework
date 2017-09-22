@@ -1,6 +1,43 @@
 # SNOWF
-simple nodeJS wed framework
+a simple nodeJS web framework
 
-一个简单NodeJS网站开发框架
+## get start
+1. npm install snowframework --save
+1. create appsetting.json in root dir, refer to following example
+1. create following dir: controller, views, wwwroot
+1. create new controller in controller dir and create new index.html in views dir
+1. cteate index.js in root dir, refer to following example
+1. excute node index.js
 
-正在开发中……☺
+## index.js example
+
+``` js
+//require snowframework
+const appsetting = require('./appsetting');
+const snowf = require('snowframework');
+
+//init with appsetting.json
+var app = snowf(appsetting.snowf);
+//add controller
+app.addController('home', require('./controllers/homeController'));
+app.addController('docs', require('./controllers/docsController'));
+//start app
+app.start();
+```
+
+## appsetting.json example
+this file need snowf node
+```json
+{
+    "snowf": {
+        "environment": "development",
+        "port": "8089",
+        "router": {
+            "default": "home",
+            "error": "/shared/error.html",
+            "views": "./views",
+            "root": "./wwwroot"
+        }
+    }
+}
+```
