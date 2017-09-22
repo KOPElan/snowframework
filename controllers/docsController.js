@@ -6,7 +6,7 @@ const docsController = {
         return action.view();
     },
     startAction: function (req) {
-        return action.file('D:/OneDrive/图片/屏幕快照/2017-05-17 (1).png');
+        return action.file('./wwwroot/img/bk.svg');
         //response.content('hello world',response.contentType.txt,res);
     }
 };

@@ -6,4 +6,4 @@
 
 'use strict';
 
-//过滤器，用来过滤请求
+module.exports = require('./lib/snowf');

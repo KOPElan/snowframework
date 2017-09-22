@@ -1,11 +1,26 @@
 {
-  "name": "snowf",
-  "version": "1.0.0",
-  "description": "simple node wed framework",
-  "main": "main.js",
+  "name": "snowframework",
+  "version": "0.0.7",
+  "description": "a simple node web framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Elan",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KOPElan/snowframework.git"
+  },
+  "keywords": [
+    "mvc"
+  ],
+  "author": "KOPElan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KOPElan/snowframework/issues"
+  },
+  "homepage": "https://github.com/KOPElan/snowframework#readme"
 }
