@@ -1,0 +1,12 @@
+{
+    "snowf": {
+        "environment": "development", 
+        "port": "8089",
+        "router": {
+            "default": "home", 
+            "error": "/shared/error.html", 
+            "views": "./views", 
+            "root": "./wwwroot" 
+        }
+    }
+}
