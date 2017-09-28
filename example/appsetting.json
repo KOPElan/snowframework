@@ -5,8 +5,8 @@
         "router": {
             "default": "home", 
             "error": "/shared/error.html", 
-            "views": "./views", 
-            "root": "./wwwroot" 
+            "views": "./example/views", 
+            "root": "./example/wwwroot" 
         }
     }
 }
