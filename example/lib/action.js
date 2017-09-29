@@ -6,10 +6,10 @@
 
 'use strict';
 
-exports.view = function (data) {
+exports.view = function (model) {
     return {
         actionResult: 'view',
-        data: data
+        data: model
     }
 };
 

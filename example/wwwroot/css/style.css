@@ -1,0 +1,10 @@
+body{    
+    background-image: url(/img/bk.svg); 
+    background-size: cover;       
+}
+.index{
+    height: 100%;     
+}
+.docs{
+    padding-top: 80px;
+}
