@@ -4,8 +4,9 @@ const homeController = {
     indexAction: function (req) {
         var viewModel = {
             viewbag: {
-                title: 'view数据',
-                content: 'hello world'
+                title: 'SnowFramework',
+                topic: 'Hello Snowframework!',
+                content: 'A Simple nodeJS Web Framework'
             }
         };
 
