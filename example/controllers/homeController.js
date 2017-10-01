@@ -6,10 +6,10 @@ const homeController = {
             viewbag: {
                 title: 'SnowFramework',
                 topic: 'Hello Snowframework!',
-                content: 'A Simple nodeJS Web Framework'
+                content: 'A Simple nodeJS Web Framework, hello world !'
             }
         };
-
+        
         return action.view(viewModel);
     }
 }
