@@ -36,6 +36,7 @@ this file need snowf node
             "default": "home", 
             "error": "/shared/error.html", 
             "views": "./views", 
+            "layout": "./views/shared",
             "root": "./wwwroot" 
         }
     }
