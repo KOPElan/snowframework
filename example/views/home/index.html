@@ -1,6 +1,6 @@
 <!--snowf-layout-main-->
 <!--snowf-body-->
-<div class="uk-width-1-1 uk-flex uk-flex-middle index">
+<div class="uk-width-1-1 uk-flex uk-flex-middle index" id="myApp">
     <div class="uk-container uk-text-center">
         <h2>{{viewbag.topic}}</h2>
         <p class="uk-margin-medium uk-text-lead">
@@ -10,8 +10,22 @@
             <div class="uk-first-column"><a href="https://kopelan.github.io/snowframework " class="uk-button uk-button-primary">Get Started</a></div>
             <div><a href="https://github.com/KOPElan/snowframework" class="uk-button uk-button-default">Github</a></div>
         </div>
+        <h2>vue example</h2>
+        <p class="uk-margin-medium uk-text-lead" v-on:click="hello(prop.alert)">
+            {{prop.content}}
+        </p>
     </div>
 </div>
 <!--snowf-script-->
 <script>
+    //alert('hello world');
+    var myApp=new Vue({
+        el:'#myApp',
+        data:viewModel,
+        methods:{
+            hello:function(content){
+                alert('hello'+content);
+            }
+        }
+    });
 </script>

@@ -7,6 +7,10 @@ const homeController = {
                 title: 'SnowFramework',
                 topic: 'Hello Snowframework!',
                 content: 'A Simple nodeJS Web Framework, hello world !'
+            },
+            prop:{
+                content:'hello vue example!',
+                alert:'this is a model data'
             }
         };
         
