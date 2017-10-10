@@ -22,7 +22,5 @@
     "url": "https://github.com/KOPElan/snowframework/issues"
   },
   "homepage": "https://github.com/KOPElan/snowframework#readme",
-  "dependencies": {
-    "snowframework-action": "^0.0.1"
-  }
+  "dependencies": {}
 }
