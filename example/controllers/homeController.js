@@ -1,4 +1,4 @@
-var action = require('../lib/action');
+var mvc = require('snowframework-mvc');
 
 const homeController = {
     indexAction: function (req) {
@@ -14,7 +14,7 @@ const homeController = {
             }
         };
         
-        return action.view(viewModel);
+        return mvc.action.view(viewModel);
     }
 }
 

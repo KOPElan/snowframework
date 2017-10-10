@@ -1,6 +1,6 @@
 {
   "name": "snowframework",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "a simple node web framework",
   "main": "main.js",
   "directories": {
@@ -22,5 +22,7 @@
     "url": "https://github.com/KOPElan/snowframework/issues"
   },
   "homepage": "https://github.com/KOPElan/snowframework#readme",
-  "dependencies": {}
+  "dependencies": {
+    "snowframework-mvc": "^0.1.0"
+  }
 }
