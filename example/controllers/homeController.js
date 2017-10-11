@@ -15,6 +15,10 @@ const homeController = {
         };
 
         return mvc.action.view(context);
+    },
+    aboutAction : function (req) {
+        //TODO:业务逻辑
+        return mvc.action.content('hello content', mvc.action.contentType.html);
     }
 }
 
