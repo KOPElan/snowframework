@@ -5,7 +5,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/example/main.js"
+            "program": "${workspaceRoot}/test/main.js"
         },
             {
                 "type": "node",
