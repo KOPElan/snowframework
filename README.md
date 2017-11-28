@@ -13,11 +13,11 @@ a simple nodeJS web framework
 
 ``` js
 //require snowframework
-const snowf = require('snowframework');
+const app = require('snowframework');
 const appsetting = require('./appsetting');
 
 //init with appsetting.json
-var app = snowf(appsetting.snowf);
+app.init(appsetting.snowf);
 //add controller
 app.addController('home', require('./controllers/homeController'));
 app.addController('docs', require('./controllers/docsController'));
