@@ -1,7 +1,7 @@
-var mvc = require('snowframework-mvc');
+var actionResult=require('../../lib/actionResult');
 
 const homeController = {
-    indexAction: function (req) {
+    indexAction: function (req, res) {
         var context = {
             viewbag: {
                 title: 'SnowFramework',
@@ -13,12 +13,11 @@ const homeController = {
                 alert: 'this is a model data'
             }
         };
-
-        return mvc.action.view(context);
+        res.send(actionResult.view, context);
     },
-    aboutAction : function (req) {
-        //TODO:业务逻辑
-        return mvc.action.content('hello content', mvc.action.contentType.html);
+    aboutAction: function (req, res) {
+        //TODO:业务逻辑                        
+        res.send(snowf.action.content(action.contentType.html),"hello content");        
     }
 }
 
