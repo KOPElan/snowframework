@@ -1,4 +1,4 @@
-var actionResult=require('../../lib/actionResult');
+var snowf=require('../../lib/snowf');
 
 const homeController = {
     indexAction: function (req, res) {
@@ -12,8 +12,12 @@ const homeController = {
                 content: 'hello vue example!',
                 alert: 'this is a model data'
             }
-        };
-        res.send(actionResult.view, context);
+        };      
+        // 实现简单的filters
+        snowf.filters.allowGet(req,res);
+        
+        // 答复客户端
+        res.send(snowf.actionResult.view, context);
     },
     aboutAction: function (req, res) {
         //TODO:业务逻辑                        
