@@ -14,8 +14,8 @@ const homeController = {
             }
         };
 
-        context.viewModel.isLogin = req.user != undefined;
-        context.viewModel.content = context.viewModel.isLogin ? 'You are already login：' + req.user.userName : 'You are already logout!';
+        context.viewModel.isLogin = req.isLogin;
+        context.viewModel.content = req.isLogin ? 'You are already login：' + req.user.userName : 'You are already logout!';
 
         //var q= url.parse(req.url,true);        
 
