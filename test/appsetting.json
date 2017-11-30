@@ -13,7 +13,7 @@
         "authentication": {
             "enable": true,
             "method": "form",
-            "loginUrl": "",
+            "loginUrl": "/home/login",
             "cookieName": "snowf.Auth",
             "expires": 3600,
             "domain": ""            

@@ -3,6 +3,8 @@ var url = require('url');
 
 const homeController = {
     indexAction: function (req, res) {
+        snowf.filters.authorize(req,res);
+        
         var context = {
             viewbag: {
                 title: 'SnowFramework',
