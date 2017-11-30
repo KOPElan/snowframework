@@ -11,9 +11,11 @@
             <div><a href="https://github.com/KOPElan/snowframework" class="uk-button uk-button-default">Github</a></div>
         </div>
         <h2>vue example</h2>
-        <p class="uk-margin-medium uk-text-lead" v-on:click="hello(alert)">
+        <p class="uk-margin-medium uk-text-lead">
             {{content}}
         </p>
+        <div v-if="!isLogin" class="uk-first-column"><a href="/home/login" class="uk-button uk-button-primary">Sign In</a></div>
+        <div v-else class="uk-first-column"><a href="/home/logout" class="uk-button uk-button-primary">Sign Out</a></div>
     </div>
 </div>
 <!--snowf-script-->

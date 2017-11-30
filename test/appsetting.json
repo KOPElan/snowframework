@@ -1,13 +1,22 @@
 {
     "snowf": {
-        "environment": "developments", 
+        "environment": "developments",
         "port": "8089",
         "router": {
-            "default": "home", 
-            "error": "/shared/error.html", 
-            "views": "./test/views", 
-            "layout":"./test/views/shared",
-            "root": "./test/wwwroot" 
+            "default": "home",
+            "error": "/shared/error.html",
+            "views": "./test/views",
+            "layout": "./test/views/shared",
+            "root": "./test/wwwroot"
+        },
+        "useCookie": true,
+        "authentication": {
+            "enable": true,
+            "method": "form",
+            "loginUrl": "",
+            "cookieName": "snowf.Auth",
+            "expires": 3600,
+            "domain": ""            
         }
     }
 }
