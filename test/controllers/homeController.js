@@ -3,15 +3,15 @@ var url = require('url');
 
 const homeController = {
     indexAction: function (req, res) {
-        snowf.filters.authorize(req,res);
-        
+        snowf.filters.authorize(req, res);
+
         var context = {
             viewbag: {
                 title: 'SnowFramework',
                 topic: 'Hello Snowframework!',
                 content: 'A Simple nodeJS Web Framework, hello world !'
             },
-            viewModel: {  
+            viewModel: {
                 alert: 'this is a model data'
             }
         };
@@ -30,8 +30,9 @@ const homeController = {
 
     loginAction: function (req, res) {
         var userInfo = {
-            userName: 'dxsh126',
-            password: '123456'
+            userName: 'jim',
+            email: 'jim@email.com',
+            roles: ['Admin']
         };
 
         snowf.signIn(res, userInfo, true);
